@@ -1,0 +1,206 @@
+/* Fuente elegante de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+/* Estilos base */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0a0a1a, #1a1a3a) no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: rgba(0, 153, 255, 0.8);
+  box-shadow: 0 8px 20px rgba(11, 67, 250, 0.986);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffd5 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00ffd5 !important;
+}
+
+/* HERO CONTACTO */
+.hero-contact {
+  background: linear-gradient(135deg, #0066ff, #00ccff);
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-contact::after {
+  content: ""; 
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-contact h1,
+.hero-contact p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos */
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  color: #00ffd5;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00ffd5, transparent);
+}
+
+/* Tarjetas de información */
+.info-card {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.info-card .card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00ffd5;
+  border-radius: 12px;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.2);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.info-card:hover .card {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 255, 213, 0.4);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: #00ffd5;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover .card-icon {
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* Formulario de contacto */
+.contact-form {
+  background: linear-gradient(to bottom, rgba(10, 10, 30, 0.8), rgba(5, 5, 20, 0.9));
+}
+
+.contact-form-container {
+  background-color: rgba(20, 20, 40, 0.8);
+  border: 1px solid #0066ff;
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.3);
+}
+
+.form-control, .form-select {
+  background-color: rgba(30, 30, 60, 0.8);
+  border: 1px solid #00ffd5;
+  color: #ffffff;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: rgba(40, 40, 80, 0.8);
+  border-color: #00ffd5;
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.5);
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #00ffd5;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0066ff;
+  color: #ffffff;
+  box-shadow: 0 0 15px #00ffd5;
+}
+
+/* Mapa */
+.map-container {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #00ffd5;
+  box-shadow: 0 0 20px rgba(0, 255, 213, 0.3);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #00ffd5; }
+  to { text-shadow: 0 0 20px #00ffd5, 0 0 30px #00ffd5; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-contact {
+    padding: 80px 20px;
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+  }
+}

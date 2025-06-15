@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos - El Taller Digital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="productos.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="inicio.html">El Taller Digital</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="producto.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- HERO PRODUCTOS -->
+      <section class="hero-products">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Nuestros Productos</h1>
+          <p class="lead">Componentes de alta calidad para tu setup ideal</p>
+        </div>
+      </section>
+      
+      <!-- CATEGORÍAS DE PRODUCTOS -->
+      <section class="product-categories py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="section-title">Explora nuestras categorías</h2>
+          </div>
+          
+          <div class="row g-4">
+            <!-- Categoría 1 -->
+            <div class="col-md-4">
+              <div class="category-card">
+                <a href="#laptops" class="text-decoration-none">
+                  <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                      <div class="card-icon">💻</div>
+                      <h3 class="card-title">Laptops</h3>
+                      <p class="card-text">Ultralivianas, gaming y trabajo</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Categoría 2 -->
+            <div class="col-md-4">
+              <div class="category-card">
+                <a href="#componentes" class="text-decoration-none">
+                  <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                      <div class="card-icon">🖥️</div>
+                      <h3 class="card-title">Componentes</h3>
+                      <p class="card-text">Lo mejor en hardware</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Categoría 3 -->
+            <div class="col-md-4">
+              <div class="category-card">
+                <a href="#accesorios" class="text-decoration-none">
+                  <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                      <div class="card-icon">⌨️</div>
+                      <h3 class="card-title">Accesorios</h3>
+                      <p class="card-text">Mejora tu experiencia</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- LISTADO DE PRODUCTOS -->
+      <section class="product-list py-5 bg-dark-gradient">
+        <div class="container">
+          <h2 id="laptops" class="section-title mb-5">Laptops</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Producto 1 -->
+            <div class="col">
+              <div class="product-card h-100">
+                <div class="card">
+                  <div class="product-badge">Nuevo</div>
+                  <img src="https://via.placeholder.com/300x200?text=Laptop+Gaming" class="card-img-top" alt="Laptop Gaming">
+                  <div class="card-body">
+                    <h5 class="card-title">Laptop Gaming Pro</h5>
+                    <p class="card-text">RTX 3080, 32GB RAM, 1TB SSD</p>
+                    <div class="price">$2,499.99</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="col">
+              <div class="product-card h-100">
+                <div class="card">
+                  <div class="product-badge">Oferta</div>
+                  <img src="https://via.placeholder.com/300x200?text=Laptop+Ultrabook" class="card-img-top" alt="Ultrabook">
+                  <div class="card-body">
+                    <h5 class="card-title">Ultrabook Elite</h5>
+                    <p class="card-text">i7, 16GB RAM, 512GB SSD</p>
+                    <div class="price">$1,299.99 <span class="old-price">$1,499.99</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="col">
+              <div class="product-card h-100">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x200?text=Laptop+Estudiante" class="card-img-top" alt="Laptop Estudiante">
+                  <div class="card-body">
+                    <h5 class="card-title">Laptop Estudiante</h5>
+                    <p class="card-text">Ryzen 5, 8GB RAM, 256GB SSD</p>
+                    <div class="price">$699.99</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Más secciones de productos pueden agregarse aquí -->
+        </div>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="text-white text-center py-4">
+      <div class="container">
+        &copy; 2025 El Taller Digital. Todos los derechos reservados.
+        <div class="mt-2">
+          <small>Tecnología que transforma tu experiencia digital</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - El Taller Digital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="contacto.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="inicio.html">El Taller Digital</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="producto.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- HERO CONTACTO -->
+    <section class="hero-contact">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Contáctanos</h1>
+        <p class="lead">Estamos aquí para ayudarte</p>
+      </div>
+    </section>
+    
+    <main>
+      <!-- INFORMACIÓN DE CONTACTO -->
+      <section class="contact-info py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="info-card">
+                <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                    <div class="card-icon">📍</div>
+                    <h3 class="card-title">Ubicación</h3>
+                    <p class="card-text">Bo. EL Rosario<br>Ciudad corinto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="info-card">
+                <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                    <div class="card-icon">📞</div>
+                    <h3 class="card-title">Teléfono</h3>
+                    <p class="card-text">+1 234 567 890<br>Lunes a Viernes 9am-6pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="info-card">
+                <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                    <div class="card-icon">✉️</div>
+                    <h3 class="card-title">Email</h3>
+                    <p class="card-text">info@tallerdigital.com<br>soporte@tallerdigital.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- FORMULARIO DE CONTACTO -->
+      <section class="contact-form py-5 bg-dark-gradient">
+        <div class="container">
+          <h2 class="section-title mb-5">Envíanos un mensaje</h2>
+          
+          <form class="contact-form-container p-4 rounded">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-12">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto" required>
+              </div>
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      <!-- MAPA -->
+      <section class="contact-map py-5">
+        <div class="container">
+          <h2 class="section-title mb-5">Encuéntranos</h2>
+          <div class="map-container rounded">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.123456!3d39.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDA3JzI0LjgiTiAwwrAwNyczNi4wIlc!5e0!3m2!1ses!2ses!4v1234567890123!5m2!1ses!2ses" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="text-white text-center py-4">
+      <div class="container">
+        &copy; 2025 El Taller Digital. Todos los derechos reservados.
+        <div class="mt-2">
+          <small>Tecnología que transforma tu experiencia digital</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
